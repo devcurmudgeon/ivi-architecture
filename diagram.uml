@@ -3,7 +3,58 @@ title IVI Architecture Diagram
 
 left to right direction
 
-rectangle  #DDDDDD {
+rectangle #DDDDDD {
+package Bluetooth {
+  [Messaging]
+  [Phone Book]
+  [ Bluetooth Stack (e.g. Bluez)]
+  [Hands-free]
+  [Media Playback]
+  [Tethering]
+}
+
+package CameraFunctions {
+  [Rear View Camera]
+  [Guidance / Overlay]
+}
+
+package Speech {
+  [Speech Input (ASR)]
+  [Speech Output (TTS)]
+  [Speech Dialog]
+  [Speech to Text Dictation]
+}
+
+package HMISupport {
+  [I18N & L10N]
+  [Graphical Framework]
+  [Pop-Up Manager]
+  [Buttons]
+  [Handwriting]
+}
+
+package CEDeviceIntegration {
+  [Smart Device Link]
+  [CarPlay TM]
+  [Android Auto]
+  [MirrorLink]
+}
+
+package PIM {
+  [Shared Address Book]
+  [Internet Account Manager]
+  [Device Sync]
+  [Calendar]
+  [Internet Account Sync]
+}
+
+package VehicleInterface {
+  [Seat Heating]
+  [Climate Control]
+  [Vehicle Settings]
+  [Vehicle Interface API (e.g. AMB]
+}
+
 package Radio&Tuners {
   [AM/FM]
   [SDARS]
