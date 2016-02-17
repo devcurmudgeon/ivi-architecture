@@ -4,6 +4,20 @@ title IVI Architecture Diagram
 scale .5
 left to right direction
 
+rectangle {
+  rectangle {
+    [Generic Libraries (libc etc.)]
+  }
+
+  rectangle {
+    [Low-level system libraries (libusb etc.)]
+  }
+
+  rectangle {
+    [Drivers, BSP, Linux Kernel]
+  }
+}
+
 rectangle #FFFF99 {
 package DeviceManagement {
   [Advanced Handover Support]
@@ -204,6 +218,5 @@ package InternetFunctions {
 rectangle {
  [Business Logic / Platform Adaptations (optional, depending on circumstance)]
 }
-
 
 " ]]
