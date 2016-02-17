@@ -1,10 +1,9 @@
 [[!uml src="
 title IVI Architecture Diagram 
 
-rectangle {
- [Business Logic / Platform Adaptations (optional, depending on circumstance)]
-}
-rectangle {
+left to right direction
+
+rectangle  #DDDDDD {
 package Radio&Tuners {
   [AM/FM]
   [SDARS]
@@ -35,5 +34,10 @@ package MediaFramework {
   [Music Identification]
 }
 }
-" ]]
 
+rectangle {
+ [Business Logic / Platform Adaptations (optional, depending on circumstance)]
+}
+
+
+" ]]
