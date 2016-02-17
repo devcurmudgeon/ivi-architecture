@@ -4,6 +4,103 @@ title IVI Architecture Diagram
 scale .5
 left to right direction
 
+rectangle #FFFF99 {
+package DeviceManagement {
+  [Advanced Handover Support]
+  [uevent /udev]
+}
+
+package AudioManagement {
+  [Audio Manager]
+  [Pulse Audio]
+}
+
+package Audio/VideoProcessing {
+  [EC/NR]
+  [Alsa]
+  [Video Inputs (i.e. V4L)]
+  [GStreamer]
+  [Codecs]
+  [SRC]
+}
+
+package GraphicsSupport {
+  [Layer Management]
+  [OpenGL (EGL)]
+  [IVI Compositor (Wayland Protocol)]
+}
+
+package NetworkManagement {
+  [ConnMan]
+  [Traffic Shaping]
+  [Firewall Rule Management]
+}
+
+package Networks {
+  [Vehicle Bus Proxy (CAN, FlexRay)]
+  [SOME-IP]
+  [EAVB]
+  [WiFi]
+  [Tethering]
+  [NFC]
+  [INC]
+  [ICC]
+}
+
+package IPC {
+  [DBUS]
+  [CommonAPI Runtime]
+  [Message Broker/Routers]
+}
+
+package Persistence {
+  [Persistence Client Lib]
+  [Persistence Admin]
+  [SQLite, Custom storage]
+  [Persistence Health Monitor]
+}
+
+package SWManagement {
+  [SW Loading Manager]
+  [Package Manager]
+  [Module Loader]
+  [SOTA Client]
+}
+
+package LifeCycle {
+  [Node State Manager]
+  [Node Startup Controller]
+  [Node Resource Manager]
+  [Node Health Monitor]
+}
+
+package UserManagement {
+  [User Identification]
+  [User Switch]
+  [User Data Migration]
+}
+
+package Housekeeping {
+  [Error/Event Logging (DLT)]
+  [Exception Handling]
+  [Statistics]
+  [Coding / System Config]
+}
+
+package SecurityInfrastructure {
+  [HSM]
+  [Encryption, Signatures]
+  [MAC]
+  [Anomaly Detection]
+}
+
+package Diagnostics {
+  [UDS]
+  [Automotive Diagnostics]
+  [DTCs]
+  [Remote Diagnostics]
+}
+}
 rectangle #DDDDDD {
 package Bluetooth {
   [Messaging]
