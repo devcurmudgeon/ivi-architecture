@@ -1,0 +1,39 @@
+[[!uml src="
+title IVI Architecture Diagram 
+
+rectangle {
+ [Business Logic / Platform Adaptations (optional, depending on circumstance)]
+}
+rectangle {
+package Radio&Tuners {
+  [AM/FM]
+  [SDARS]
+  [Broadcast Data Services]
+  [DAB/DRM]
+  [Terrestrial TV]
+  [HD Radio]
+  [TMC/VICS]  
+}
+
+package Telephony {
+  [Telephony Stack (e.g. Ofono)]
+}
+
+package Navigation/LBS {
+  [Traffic Info]
+  [Navigation Core]
+  [Map Viewer]
+  [Map Data Service]
+  [Positioning]
+  [POI Manager]
+}
+
+package MediaFramework {
+  [Playback Control]
+  [Browser]
+  [Indexer]
+  [Music Identification]
+}
+}
+" ]]
+
