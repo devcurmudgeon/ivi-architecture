@@ -84,6 +84,23 @@ package MediaFramework {
   [Indexer]
   [Music Identification]
 }
+
+package MediaSources {
+  [USB Mass Storage]
+  [Commercial Streaming]
+  [Bluetooth Stream]
+  [MTP]
+  [Internet Radio]
+  [AUX]
+  [DLNA]
+  [IAP]
+}
+
+package InternetFunctions {
+  [DUMM]
+  [Web Browser]
+  [Cloud Based Services]
+}
 }
 
 rectangle {
