@@ -1,6 +1,7 @@
 [[!uml src="
 title IVI Architecture Diagram 
 
+scale .5
 left to right direction
 
 rectangle #DDDDDD {
